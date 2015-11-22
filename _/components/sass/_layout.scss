@@ -1,0 +1,179 @@
+
+.body-wrapper{
+	position:relative;
+}
+header{
+	height: 53px;
+	background-color: rgba(25, 25, 25, 0.8);
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+.main-content{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 13% 5% 0 5%;
+
+	@include respond-to(small-screens) {
+		padding-top:10%;
+	}
+			@include respond-to(medium-screens) {
+		padding-top:6%;
+	}
+		@include respond-to(large-screens) {
+		padding-top:4%;
+	}
+	@include respond-to(x-large-screens) {
+		padding-top:4%;
+	}
+}
+
+.item{
+	margin: 2.5% 0%;
+	overflow: hidden;
+	width: 100%;
+	padding:0;
+	float:left;
+	@include box-shadow-2(0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12));
+		img{
+			position: relative;
+		    max-height: 100%;
+		    width:100%;
+			height: 166px;
+				@include respond-to(medium-screens){
+					height: 250px;
+				}
+				@include respond-to(large-screens)  { 
+					top: 50%;
+					left: 0;
+					max-height: none;
+					width: 100%;
+				}
+				@include respond-to(x-large-screens) {
+					height: 256.5px;
+				}
+		}		
+}
+.item.one{
+	height: 300px;
+	
+	@include respond-to(medium-screens) {
+		height: 400px;
+	}
+	@include respond-to(large-screens) {
+		height: 350px;
+		width:50%;
+	}
+	@include respond-to(x-large-screens) {
+		height: 500px;
+		width:50%;
+	}
+}
+.item.three{
+	height: 100px;
+	@include respond-to(medium-screens) {
+		  height: 200px;
+		  margin-bottom: 2%;
+		  margin-top:0;
+	}
+	@include respond-to(large-screens) {
+		height: 158px;
+		width: 46%;
+		margin-left: 4%;
+		margin-bottom: 2%;
+	}
+	@include respond-to(x-large-screens) {
+		height: 209px;
+		width: 46%;
+		margin-left: 4%;
+	}
+}
+.item-container{
+	margin:0;
+	overflow: hidden;
+	width: 100%;
+	padding:0;
+	float:left;
+		@include respond-to(large-screens) {
+			padding-left: 3%;
+			width: 50%;
+		}
+		@include respond-to(x-large-screens) {
+			padding-left: 3%;
+			width: 50%;
+		}
+}
+.item.four{
+	width: 48%;
+	@include respond-to(medium-screens) {
+		margin: 4% 0;
+	}	
+	@include respond-to(large-screens) {
+		width: 48%;
+		margin-left: 2%;
+		margin-right: 0 !IMPORTANT;
+	}
+	@include respond-to(x-large-screens) {
+		width: 48%;
+		margin-left: 2%;
+		margin-right: 0 !IMPORTANT;
+	}
+}
+.item.five{
+	max-height: 190px;
+	height: 100%;
+}
+.item.six{
+	position: absolute;
+	z-index: 1;
+	width: 83.1%;
+	left: 12%;
+	margin-top: 7%;
+}
+.text-overlay {
+	padding: 50px 0px 0px;
+	height: 270px;
+	position: absolute;
+	width: 80%;
+	z-index: 1000;
+	top: 63px;
+	margin: 0 5%;
+	color: #fff;
+		h1{
+			color: #F44336;
+			line-height: 1.2;
+			font-weight: 400;
+		}
+		p{
+		text-shadow: 4px 4px 6px rgba(150, 150, 150, 0.9);
+		line-height: 1.2;
+		}
+}	
+.margin-right{
+	margin-right:4% !Important;	
+}
+.hideimage{
+	@include respond-to(medium-screens){
+		display:none
+	}
+	@include respond-to(large-screens){
+		display:none
+	}
+	@include respond-to(x-large-screens){
+		display:none
+	}
+}
+footer{
+	color:#F44336;
+	a{
+		color:#F44336 !important;
+		text-transform:uppercase;
+			&:hover{
+				color:#0A2933;
+			}
+	}
+	h5{
+		color:#F44336 !important;
+	}
+}

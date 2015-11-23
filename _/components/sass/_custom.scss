@@ -1,0 +1,57 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.intro {
+    width: 100%;
+    min-height: 346px;
+    background-color: blue;
+    background-image: url("http://web.kateeldridge.co/Alec/_/images/HomePageScene.png");
+    height: 100%;
+    background-size: 158%;
+    background-repeat: no-repeat;
+    background-position-x: 23%;
+    background-position-y: -52%;
+}
+.bottom{
+    height: 222px;
+    background-color: #dfd9d9;
+}
+.bottom::before{
+    content: " ";
+    position: relative;
+    left: 0;
+    top: -43px;
+    width: 100%;
+    background: #dfd9d9;
+    height: 116px;
+    transform: skew(0deg,-2.2deg);
+    -webkit-transform: skew(0deg,-9.2deg);
+    -moz-transform: skew(0deg,-2.2deg);
+    -o-transform: skew(0deg,-2.2deg);
+    -ms-transform: skew(0deg,-2.2deg);
+    z-index: 1;
+    float: left;
+}
+
+.bottom-copy{
+    padding: 0 6% 0 6%;
+    position: absolute;
+      p{
+        position: relative;
+        z-index: 1;
+          span{
+            color: #B22957;
+            text-transform: uppercase;
+            font-size: 18pt;
+            line-height: 2px;          
+          }
+      }
+}

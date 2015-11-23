@@ -1,0 +1,71 @@
+.input {
+    height: 50px;
+    clear: both;
+    padding: 0 7%;
+}
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
+  border: none;
+}
+input[type="text"]:focus {
+  outline: none;
+   height: 36px;
+  width: 189px;
+}
+
+input#email{
+  height: 36px;
+  width: 189px;
+  border:none;
+}
+
+button{
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  height: 36px;
+  border: none;
+  width: 78px;
+  margin: 0;
+  position: relative;
+  right: 3px;
+    :hover{
+      background-color: #2bbbad;
+    }
+}
+
+.waves{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}

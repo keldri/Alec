@@ -1,7 +1,18 @@
 .input {
     height: 50px;
-    clear: both;
-    padding: 0 7%;
+    padding: 4% 6%;
+      p{
+        font-size: 9pt;
+        font-family: 'Open Sans', sans-serif;
+        color: #3297B2;
+        margin-top: 5px;
+        margin-left:4px;
+      }
+       @include respond-to(small-screens){
+         bottom:95px;
+         margin-left:0;
+         text-align:center
+       }
 }
 input[type="text"] {
   display: block;
@@ -23,14 +34,16 @@ input[type="text"]:focus {
 
 input#email{
   height: 36px;
-  width: 189px;
+  width: 70%;
   border:none;
+  @include respond-to(small-screens){
+    width:76%;
+  }
 }
 
 button{
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: .2s ease-out;
@@ -39,33 +52,28 @@ button{
   -ms-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.square {
+  background-color: #2EABCC;
   height: 36px;
   border: none;
   width: 78px;
-  margin: 0;
-  position: relative;
   right: 3px;
-    :hover{
-      background-color: #2bbbad;
-    }
 }
-
-.waves{
-  position: relative;
+.square:hover{
+  background-color: #3297B2;
+}
+.round {
+  background-color:transparent;
+  border:2px solid #3297B2;
+  width: 35.5px;
+  height: 35.5px;
+  border-radius: 50%;
+  transition: .3s;
   cursor: pointer;
-  display: inline-block;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
   vertical-align: middle;
-  z-index: 1;
-  will-change: opacity, transform;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  -ms-transition: all .3s ease-out;
-  transition: all .3s ease-out
+  display:inline;
 }

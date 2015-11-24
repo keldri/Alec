@@ -100,10 +100,34 @@ h2 {
 /* line 21, ../components/sass/_custom.scss */
 h2 span {
   font-family: 'PT Sans', sans-serif;
-  font-size: 40px;
+  font-size: 32pt;
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 21, ../components/sass/_custom.scss */
+  h2 span {
+    font-size: 44pt;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 21, ../components/sass/_custom.scss */
+  h2 span {
+    font-size: 60pt;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 17, ../components/sass/_custom.scss */
+  h2 {
+    font-size: 29pt;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 17, ../components/sass/_custom.scss */
+  h2 {
+    font-size: 43pt;
+  }
 }
 
-/* line 28, ../components/sass/_custom.scss */
+/* line 40, ../components/sass/_custom.scss */
 .intro {
   width: 100%;
   min-height: 291px;
@@ -113,67 +137,100 @@ h2 span {
   background-size: cover;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 28, ../components/sass/_custom.scss */
+  /* line 40, ../components/sass/_custom.scss */
   .intro {
     min-height: 335px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 28, ../components/sass/_custom.scss */
+  /* line 40, ../components/sass/_custom.scss */
   .intro {
     min-height: 379px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 28, ../components/sass/_custom.scss */
+  /* line 40, ../components/sass/_custom.scss */
   .intro {
-    min-height: 516px;
+    min-height: 511px;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 40, ../components/sass/_custom.scss */
+  .intro {
+    min-height: 773px;
+    height: 100%;
   }
 }
 
-/* line 45, ../components/sass/_custom.scss */
+/* line 61, ../components/sass/_custom.scss */
 .intro-copy {
   position: relative;
   top: 134px;
   text-align: center;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 45, ../components/sass/_custom.scss */
+  /* line 61, ../components/sass/_custom.scss */
   .intro-copy {
     top: 189px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 45, ../components/sass/_custom.scss */
+  /* line 61, ../components/sass/_custom.scss */
   .intro-copy {
     top: 200px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 61, ../components/sass/_custom.scss */
+  .intro-copy {
+    top: 228px;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 61, ../components/sass/_custom.scss */
+  .intro-copy {
+    top: 256px;
+  }
+}
 
-/* line 56, ../components/sass/_custom.scss */
+/* line 78, ../components/sass/_custom.scss */
 .logo {
   text-align: center;
 }
-/* line 58, ../components/sass/_custom.scss */
+/* line 80, ../components/sass/_custom.scss */
 .logo img {
   width: 40px;
   height: 40px;
 }
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 80, ../components/sass/_custom.scss */
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 80, ../components/sass/_custom.scss */
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
 
-/* line 63, ../components/sass/_custom.scss */
+/* line 93, ../components/sass/_custom.scss */
 .bottom {
   min-height: 277px;
   background-color: #dfd9d9;
   z-index: 2;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 63, ../components/sass/_custom.scss */
+  /* line 93, ../components/sass/_custom.scss */
   .bottom {
     min-height: 325px;
   }
 }
 
-/* line 72, ../components/sass/_custom.scss */
+/* line 102, ../components/sass/_custom.scss */
 .bottom-before {
   content: " ";
   position: relative;
@@ -191,90 +248,154 @@ h2 span {
   position: relative;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 72, ../components/sass/_custom.scss */
+  /* line 102, ../components/sass/_custom.scss */
   .bottom-before {
     top: -19px;
     height: 37px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 72, ../components/sass/_custom.scss */
+  /* line 102, ../components/sass/_custom.scss */
   .bottom-before {
     top: -22px;
     height: 44px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 72, ../components/sass/_custom.scss */
+  /* line 102, ../components/sass/_custom.scss */
   .bottom-before {
     top: -29px;
     height: 57px;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 72, ../components/sass/_custom.scss */
+  /* line 102, ../components/sass/_custom.scss */
   .bottom-before {
     top: -26px;
     height: 52px;
   }
 }
 
-/* line 105, ../components/sass/_custom.scss */
+/* line 135, ../components/sass/_custom.scss */
 .bottom-copy {
-  padding: 0 6% 5%;
+  padding: 0 6%;
 }
-/* line 107, ../components/sass/_custom.scss */
+/* line 137, ../components/sass/_custom.scss */
 .bottom-copy p {
   z-index: 1;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.3;
   font-size: 11pt;
+  position: relative;
+  bottom: 16px;
 }
-/* line 112, ../components/sass/_custom.scss */
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* line 137, ../components/sass/_custom.scss */
+  .bottom-copy p {
+    padding: 11% 1% 2%;
+    font-size: 12pt;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 137, ../components/sass/_custom.scss */
+  .bottom-copy p {
+    font-size: 12pt;
+    padding-bottom: 4%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 137, ../components/sass/_custom.scss */
+  .bottom-copy p {
+    font-size: 14pt;
+  }
+}
+/* line 155, ../components/sass/_custom.scss */
 .bottom-copy p span {
-  color: #B22957;
+  color: #FF548D;
   text-transform: uppercase;
   font-size: 18pt;
   line-height: 2px;
 }
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 105, ../components/sass/_custom.scss */
-  .bottom-copy {
-    padding: 11% 6% 5%;
-  }
-}
 
-/* line 123, ../components/sass/_custom.scss */
+/* line 164, ../components/sass/_custom.scss */
 .fa {
   color: #000;
   font-size: 15pt !important;
 }
-/* line 126, ../components/sass/_custom.scss */
+/* line 167, ../components/sass/_custom.scss */
 .fa :hover {
   color: #2EABCC;
 }
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* line 164, ../components/sass/_custom.scss */
+  .fa {
+    font-size: 20pt !important;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 164, ../components/sass/_custom.scss */
+  .fa {
+    font-size: 20pt !important;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 164, ../components/sass/_custom.scss */
+  .fa {
+    font-size: 20pt !important;
+  }
+}
 
-/* line 130, ../components/sass/_custom.scss */
+/* line 180, ../components/sass/_custom.scss */
 .hiring {
   text-align: center;
-  padding: 12% 21% 0;
+  padding: 13% 0 0;
 }
-/* line 133, ../components/sass/_custom.scss */
+/* line 183, ../components/sass/_custom.scss */
 .hiring p {
-  float: left;
-  padding: 5% 3%;
+  padding: 3% 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10pt;
+  text-transform: uppercase;
+  color: #FF548D;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 130, ../components/sass/_custom.scss */
+  /* line 183, ../components/sass/_custom.scss */
+  .hiring p {
+    font-size: 1pt;
+    padding: 2% 0 0;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 183, ../components/sass/_custom.scss */
+  .hiring p {
+    font-size: 14pt;
+    padding: 2% 0 0;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 183, ../components/sass/_custom.scss */
+  .hiring p {
+    font-size: 14pt;
+    padding: 2% 0 0;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* line 180, ../components/sass/_custom.scss */
   .hiring {
     bottom: 62px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 180, ../components/sass/_custom.scss */
+  .hiring {
+    padding: 7% 0;
   }
 }
 
 /* line 1, ../components/sass/_forms.scss */
 .input {
   height: 50px;
-  padding: 4% 6%;
+  padding: 0% 6%;
 }
 /* line 4, ../components/sass/_forms.scss */
 .input p {
@@ -285,16 +406,37 @@ h2 span {
   margin-left: 4px;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 1, ../components/sass/_forms.scss */
-  .input {
+  /* line 4, ../components/sass/_forms.scss */
+  .input p {
     bottom: 95px;
     margin-left: 0;
     text-align: center;
   }
 }
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 4, ../components/sass/_forms.scss */
+  .input p {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 4, ../components/sass/_forms.scss */
+  .input p {
+    font-size: 11pt;
+  }
+}
 
-/* line 17, ../components/sass/_forms.scss */
-input[type="text"] {
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 23, ../components/sass/_forms.scss */
+  .input-fields {
+    width: 100%;
+    float: left;
+    margin-bottom: 2%;
+  }
+}
+
+/* line 31, ../components/sass/_forms.scss */
+input[type="text"], input[type=email] {
   display: block;
   margin: 0;
   width: 100%;
@@ -305,29 +447,108 @@ input[type="text"] {
   border-radius: none;
   padding: 10px;
   border: none;
+  height: 27px;
 }
-
-/* line 29, ../components/sass/_forms.scss */
-input[type="text"]:focus {
-  outline: none;
-  height: 36px;
-  width: 189px;
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 31, ../components/sass/_forms.scss */
+  input[type="text"], input[type=email] {
+    height: 39px;
+  }
 }
-
-/* line 35, ../components/sass/_forms.scss */
-input#email {
-  height: 36px;
-  width: 70%;
-  border: none;
-}
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 35, ../components/sass/_forms.scss */
-  input#email {
-    width: 76%;
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 31, ../components/sass/_forms.scss */
+  input[type="text"], input[type=email] {
+    height: 39px;
   }
 }
 
-/* line 44, ../components/sass/_forms.scss */
+/* line 50, ../components/sass/_forms.scss */
+input[type="text"]:focus, input[type=email]:focus {
+  outline: none;
+  height: 39px;
+  width: 189px;
+}
+
+/* line 55, ../components/sass/_forms.scss */
+input#name {
+  width: 41%;
+  border: none;
+  float: left;
+  margin-right: 3px;
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 55, ../components/sass/_forms.scss */
+  input#name {
+    width: 34%;
+    margin-right: -3px;
+  }
+}
+
+/* line 65, ../components/sass/_forms.scss */
+input#email {
+  margin-left: 5px;
+  width: 56%;
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 65, ../components/sass/_forms.scss */
+  input#email {
+    margin-left: 6%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 65, ../components/sass/_forms.scss */
+  input#email {
+    margin-left: 5px;
+    width: 41%;
+    float: left;
+  }
+}
+
+/* line 80, ../components/sass/_forms.scss */
+input::-webkit-input-placeholder {
+  color: rgba(255, 84, 141, 0.38);
+}
+
+/* line 83, ../components/sass/_forms.scss */
+input:focus::-webkit-input-placeholder {
+  color: #FF548D;
+}
+
+/* line 86, ../components/sass/_forms.scss */
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 84, 141, 0.38);
+}
+
+/* line 89, ../components/sass/_forms.scss */
+input:focus::-moz-placeholder {
+  /* Firefox 18- */
+  color: #FF548D;
+}
+
+/* line 92, ../components/sass/_forms.scss */
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 84, 141, 0.38);
+}
+
+/* line 95, ../components/sass/_forms.scss */
+input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FF548D;
+}
+
+/* line 98, ../components/sass/_forms.scss */
+:-ms-input-placeholder {
+  color: rgba(255, 84, 141, 0.38);
+}
+
+/* line 101, ../components/sass/_forms.scss */
+input:focus:-ms-input-placeholder {
+  color: #FF548D;
+}
+
+/* line 105, ../components/sass/_forms.scss */
 button {
   text-decoration: none;
   color: #fff;
@@ -343,29 +564,67 @@ button {
   position: relative;
 }
 
-/* line 59, ../components/sass/_forms.scss */
+/* line 121, ../components/sass/_forms.scss */
 .square {
   background-color: #2EABCC;
-  height: 36px;
+  height: 28px;
   border: none;
-  width: 78px;
-  right: 3px;
+  width: 98%;
+  padding: 0;
+  margin-top: 8px;
+  font-size: 11pt;
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 121, ../components/sass/_forms.scss */
+  .square {
+    height: 41px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 121, ../components/sass/_forms.scss */
+  .square {
+    height: 41px;
+    width: 20%;
+    float: left;
+    margin-top: 0;
+    margin-left: 3px;
+    height: 39px;
+  }
 }
 
-/* line 66, ../components/sass/_forms.scss */
+/* line 141, ../components/sass/_forms.scss */
 .square:hover {
   background-color: #3297B2;
 }
 
-/* line 69, ../components/sass/_forms.scss */
+/* line 144, ../components/sass/_forms.scss */
 .round {
   background-color: transparent;
   border: 2px solid #3297B2;
-  width: 35.5px;
-  height: 35.5px;
+  width: 30.5px;
+  height: 30.5px;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
-  vertical-align: middle;
-  display: inline;
+}
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  /* line 144, ../components/sass/_forms.scss */
+  .round {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+  /* line 144, ../components/sass/_forms.scss */
+  .round {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 144, ../components/sass/_forms.scss */
+  .round {
+    width: 50px;
+    height: 50px;
+  }
 }

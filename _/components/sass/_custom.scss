@@ -20,8 +20,20 @@ h2{
   color:#fff;
     span{
       font-family: 'PT Sans', sans-serif;
-      font-size:40px;
+      font-size:32pt;
+         @include respond-to(medium-screens){
+          font-size:44pt;
+         }
+         @include respond-to(large-screens){
+          font-size:60pt;
+         }
     }
+    @include respond-to(medium-screens){
+          font-size:29pt;
+       }
+       @include respond-to(large-screens){
+          font-size:43pt;
+       }
 }
 
 
@@ -39,7 +51,11 @@ h2{
           min-height: 379px;
        }
         @include respond-to(medium-screens){
-          min-height:516px;
+          min-height:511px;
+       }
+       @include respond-to(large-screens){
+          min-height:773px;
+          height:100%;
        }
 }
 .intro-copy {
@@ -52,12 +68,26 @@ h2{
      @include respond-to(smaller-screens){
         top:200px;
      }
+     @include respond-to(medium-screens){
+        top:228px
+     }
+     @include respond-to(large-screens){
+          top:256px;
+       }
 }    
 .logo{
   text-align:center;
     img{
       width:40px;
       height:40px;
+      @include respond-to(medium-screens){   
+        width: 60px;
+        height: 60px;
+      }  
+       @include respond-to(large-screens){
+        width: 80px;
+        height: 80px;
+       }
     }
 }
 .bottom{
@@ -103,38 +133,76 @@ h2{
 }
 
 .bottom-copy{
-    padding: 0 6% 5%;
+    padding: 0 6%;
       p{
         z-index: 1;
         font-family: 'Open Sans', sans-serif;
         line-height: 1.3;
         font-size: 11pt;
-            span{
-              color: #B22957;
+        position: relative;
+        bottom: 16px;
+          @include respond-to(small-screens){
+             padding: 11% 1% 2%;
+             font-size:12pt
+          } 
+          @include respond-to(smaller-screens){
+            font-size: 12pt;
+            padding-bottom: 4%;
+          }
+          @include respond-to(medium-screens){
+            font-size:14pt;
+          }  
+              span{
+              color: #FF548D;
               text-transform: uppercase;
               font-size: 18pt;
               line-height: 2px;          
             }
-      }
-       @include respond-to(small-screens){
-            padding: 11% 6% 5%;
-        }
+
+  }
 }
 .fa{
   color: #000;
-  font-size: 15pt!important;
-    :hover{
-      color:#2EABCC;
-    }
+    font-size: 15pt!important;
+      :hover{
+        color:#2EABCC;
+      }
+       @include respond-to(small-screens){
+        font-size: 20pt!important;
+      }
+      @include respond-to(smaller-screens){
+        font-size: 20pt!important;
+      }
+      @include respond-to(medium-screens){
+        font-size: 20pt!important;
+      }
 }
 .hiring{
     text-align: center;
-    padding: 12% 21% 0;
+    padding: 13% 0 0;
     p{
-      float:left;
-      padding:5% 3%;
+      padding: 3% 0 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 10pt;
+      text-transform: uppercase;
+      color: #FF548D;
+        @include respond-to(small-screens){
+          font-size:1pt;
+          padding:2% 0 0;
+        }
+        @include respond-to(smaller-screens){
+          font-size:14pt;
+          padding:2% 0 0;
+        }
+        @include respond-to(medium-screens){
+          font-size:14pt;
+          padding:2% 0 0;
+        }
     }
      @include respond-to(small-screens){
       bottom:62px;
+     }
+     @include respond-to(medium-screens){
+      padding:7% 0;
      }
 }

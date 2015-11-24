@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+/*$( document ).ready(function() {
 	if($(window).width() > 399){
 		//alert("im working");
 		$('.hiring p').append('<span> new-dynamic-text</span>');
@@ -6,4 +6,4 @@ $( document ).ready(function() {
 		 $('.hiring p').remove('<span> new-dynamic-text</span>');
 	}//screen size
 
-});//document.ready
+});//document.ready*/

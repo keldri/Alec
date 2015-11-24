@@ -1,20 +1,34 @@
 .input {
     height: 50px;
-    padding: 4% 6%;
+    padding: 0% 6%;
       p{
         font-size: 9pt;
         font-family: 'Open Sans', sans-serif;
         color: #3297B2;
         margin-top: 5px;
         margin-left:4px;
-      }
-       @include respond-to(small-screens){
-         bottom:95px;
-         margin-left:0;
-         text-align:center
-       }
+          @include respond-to(small-screens){
+             bottom:95px;
+             margin-left:0;
+             text-align:center
+           }
+           @include respond-to(smaller-screens){
+            text-align:center;
+           }
+           @include respond-to(medium-screens){
+            font-size:11pt;
+           }
+      } 
 }
-input[type="text"] {
+.input-fields{
+  @include respond-to(medium-screens){
+    width: 100%;
+    float: left;
+    margin-bottom:2%;
+
+  }
+}
+input[type="text"],input[type=email] {
   display: block;
   margin: 0;
   width: 100%;
@@ -25,22 +39,69 @@ input[type="text"] {
   border-radius: none;
   padding: 10px;
   border: none;
-}
-input[type="text"]:focus {
-  outline: none;
-   height: 36px;
-  width: 189px;
-}
-
-input#email{
-  height: 36px;
-  width: 70%;
-  border:none;
-  @include respond-to(small-screens){
-    width:76%;
+  height:27px;
+ @include respond-to(smaller-screens){
+   height: 39px;
+  }
+  @include respond-to(medium-screens){
+   height: 39px;
   }
 }
+input[type="text"]:focus, input[type=email]:focus {
+  outline: none;
+   height: 39px;
+  width: 189px;
+}
+input#name {
+    width: 41%;
+    border: none;
+    float: left;
+    margin-right: 3px;
+    @include respond-to(medium-screens){
+      width:34%;
+      margin-right:-3px;
+    }
+}
+input#email{
+  margin-left: 5px;
+  width: 56%;
+      @include respond-to(small-screens){
+      }
+      @include respond-to(smaller-screens){
+        margin-left:6%;
+      }
+      @include respond-to(medium-screens){
+        margin-left: 5px;
+        width: 41%;
+        float: left;
+      }
+}
 
+input::-webkit-input-placeholder {
+   color:rgba(255, 84, 141, 0.38);
+}
+input:focus::-webkit-input-placeholder {
+   color: #FF548D; 
+}
+input:-moz-placeholder { /* Firefox 18- */
+   color:rgba(255, 84, 141, 0.38);
+}
+input:focus::-moz-placeholder { /* Firefox 18- */
+   color: #FF548D; 
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+   color:rgba(255, 84, 141, 0.38);
+}
+input:focus::-moz-placeholder {  /* Firefox 19+ */
+   color: #FF548D; 
+}
+:-ms-input-placeholder {  
+   color:rgba(255, 84, 141, 0.38);
+}
+input:focus:-ms-input-placeholder {  
+   color: #FF548D; 
+
+}
 button{
   text-decoration: none;
   color: #fff;
@@ -54,26 +115,50 @@ button{
   cursor: pointer;
   margin: 0;
   position: relative;
+
 }
 
 .square {
   background-color: #2EABCC;
-  height: 36px;
+  height: 28px;
   border: none;
-  width: 78px;
-  right: 3px;
+  width: 98%;
+  padding: 0;
+  margin-top: 8px;
+  font-size: 11pt;
+    @include respond-to(smaller-screens){
+      height:41px;
+    }
+    @include respond-to(medium-screens){
+     height: 41px;
+     width :20%;
+     float:left;
+     margin-top:0;
+     margin-left:3px;
+     height:39px;
+    }
 }
 .square:hover{
   background-color: #3297B2;
 }
 .round {
-  background-color:transparent;
-  border:2px solid #3297B2;
-  width: 35.5px;
-  height: 35.5px;
-  border-radius: 50%;
-  transition: .3s;
-  cursor: pointer;
-  vertical-align: middle;
-  display:inline;
+    background-color: transparent;
+    border: 2px solid #3297B2;
+    width: 30.5px;
+    height: 30.5px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+      @include respond-to(small-screens){
+        width:50px;
+        height:50px;
+      }
+      @include respond-to(smaller-screens){
+        width:50px;
+        height:50px;
+      }
+      @include respond-to(medium-screens){
+        width:50px;
+        height:50px;
+      }
 }

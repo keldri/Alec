@@ -14,26 +14,41 @@ body{
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
 }
-h2{
+.intro-copy h2{
   text-transform:uppercase;
-  font-size:20pt;
+  font-size:17pt;
   color:#fff;
+  float:none;
+  clear:both;
+     @include respond-to(small-screens){
+      font-size:22pt;
+     }
+      @include respond-to(smaller-screens){
+        font-size:23.5pt;
+     }
+     @include respond-to(medium-screens){
+        font-size:26pt;
+     }
+     @include respond-to(large-screens){
+        font-size:34pt;
+     }
     span{
       font-family: 'PT Sans', sans-serif;
-      font-size:32pt;
+      font-size:26pt;
+      font-weight:600;
+          @include respond-to(small-screens){
+            font-size:34pt;
+          }
+          @include respond-to(smaller-screens){
+            font-size:36pt;
+          }
          @include respond-to(medium-screens){
-          font-size:44pt;
+          font-size:40pt;
          }
          @include respond-to(large-screens){
-          font-size:60pt;
+          font-size:51pt;
          }
     }
-    @include respond-to(medium-screens){
-          font-size:29pt;
-       }
-       @include respond-to(large-screens){
-          font-size:43pt;
-       }
 }
 
 
@@ -57,47 +72,103 @@ h2{
           min-height:773px;
           height:100%;
        }
+        @include respond-to(x-large-screens){
+            min-height: 1024px;
+            background-position-x: 38%;
+            height:100%;
+       }
 }
+.intro-copy-wrapper{
+    position: relative;
+    top: 109px;
+    width: 257px;
+    margin: 0 auto;
+    max-width: 100%;
+      @include respond-to(smaller-screens){
+        width:268px;
+      }
+       @include respond-to(medium-screens){
+        width:300px;
+        top:187px;
+      }
+      @include respond-to(large-screens){
+        width:100%;
+        padding: 0 7%;
+        top: 220px;
+      }
+
+}  
 .intro-copy {
     position: relative;
-    top: 134px;
-    text-align: center;
+    text-align: center;//can remove to remove center
+   // float:left;//can add to remove center
+    margin-left: 2%;
+    top: 3px;
      @include respond-to(small-screens) {
-        top:189px;
      }
      @include respond-to(smaller-screens){
-        top:200px;
+       
      }
      @include respond-to(medium-screens){
-        top:228px
+
      }
      @include respond-to(large-screens){
-          top:256px;
+          text-align:left; //can remove to center
+          float:left; //can remove to center
+          margin-left:0;
        }
 }    
 .logo{
-  text-align:center;
+  text-align:center; //can remove to remove center
+    @include respond-to(large-screens){
+      text-align:left; //can remove to center
+      width:125px;
+      float:left; //can remove to center
+    }
+
     img{
-      width:40px;
-      height:40px;
+      width:60px;
+      height:60px;
+     // float:left;//can add in to remove center
       @include respond-to(medium-screens){   
-        width: 60px;
-        height: 60px;
+        width: 96px;
+        height: 96px;
       }  
        @include respond-to(large-screens){
-        width: 80px;
-        height: 80px;
+        width: 108px;
+        height: 108px;
        }
+    }
+    h3{
+      font-size: 15pt;
+      color: #FF548D;
+      float: left;
+      margin-top: 13px;
+      margin-left: 10px;
+      @include respond-to(large-screens){
+        float:none;
+        margin-top:0;
+        margin-left:0;
+      }
     }
 }
 .bottom{
     min-height: 277px;
     background-color: #dfd9d9;
     z-index:2;
-
-    @include respond-to(small-screens){
+       @include respond-to(small-screens){
           min-height:325px;
        }  
+       @include respond-to(large-screens){
+          background-color:transparent;
+          position: relative;
+          top: 270px;
+          width: 100%;
+          padding: 0 7%;
+       }
+       @include respond-to(x-large-screens){
+          background-color:transparent;
+       }
 }
 .bottom-before{
     content: " ";
@@ -127,13 +198,19 @@ h2{
       height: 57px;
     }  
     @include respond-to(large-screens){
-      top: -26px;
-      height: 52px;
+     display:none;
+    }
+    @include respond-to(x-large-screens){
+     display:none;
     }
 }
 
 .bottom-copy{
     padding: 0 6%;
+      @include respond-to(large-screens){
+          padding: 0;
+          width: 60%;
+      }
       p{
         z-index: 1;
         font-family: 'Open Sans', sans-serif;
@@ -141,31 +218,36 @@ h2{
         font-size: 11pt;
         position: relative;
         bottom: 16px;
-          @include respond-to(small-screens){
-             padding: 11% 1% 2%;
-             font-size:12pt
-          } 
-          @include respond-to(smaller-screens){
-            font-size: 12pt;
-            padding-bottom: 4%;
-          }
-          @include respond-to(medium-screens){
-            font-size:14pt;
-          }  
-              span{
-              color: #FF548D;
-              text-transform: uppercase;
-              font-size: 18pt;
-              line-height: 2px;          
+            @include respond-to(small-screens){
+               padding: 11% 1% 2%;
+               font-size:12pt
+            } 
+            @include respond-to(smaller-screens){
+              font-size: 12pt;
+              padding-bottom: 4%;
             }
+            @include respond-to(medium-screens){
+              font-size:14pt;
+            }  
+            @include respond-to(large-screens){
+                color: #fff;
+                font-size: 15pt;
+                line-height: 1.4;
+            }
+        }       
+        span{
+            color: #FF548D;
+            text-transform: uppercase;
+            font-size: 18pt;
+            line-height: 2px;          
+        }
 
   }
-}
 .fa{
   color: #000;
     font-size: 15pt!important;
       :hover{
-        color:#2EABCC;
+          color: #B22957;
       }
        @include respond-to(small-screens){
         font-size: 20pt!important;
@@ -179,19 +261,15 @@ h2{
 }
 .hiring{
     text-align: center;
-    padding: 13% 0 0;
+    padding: 0px 0 5%;
     p{
       padding: 3% 0 0;
       font-family: 'Open Sans', sans-serif;
       font-size: 10pt;
       text-transform: uppercase;
       color: #FF548D;
-        @include respond-to(small-screens){
-          font-size:1pt;
-          padding:2% 0 0;
-        }
         @include respond-to(smaller-screens){
-          font-size:14pt;
+          font-size:12pt;
           padding:2% 0 0;
         }
         @include respond-to(medium-screens){

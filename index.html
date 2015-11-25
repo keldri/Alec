@@ -3,7 +3,9 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>Alec</title>
+  <title>Alec | Great teachers, on-demand</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="_/css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -11,33 +13,39 @@
 
 <body>
     <div class="wrapper">
-      <section class="intro">
-        <div class="intro-copy">
-          <div class="logo">
-            <img src="http://web.kateeldridge.co/Alec/_/images/alec-logo.png" alt="Alec Logo"/>
-          </div><!--logo-->
-          <h2>Great Teachers <br/><span>On Demand</span></h2>
-        </div><!--intro-copy-->
-      </section><!--intro-->
-      <section class="bottom">
-        <div class="bottom-before"></div>
-        <div class="bottom-copy">
-          <p><span>Alec</span> allows parents to seamlessly find the ideal tutor for their child by offering a powerful matching algorithm, same-day sessions and rigorously vetted tutors.</p>
-        </div><!--bottom-copy-->
-        <div class="input">
-          <div class="input-fields">
-          <input id="name" type="text" placeholder="Name">
-          <input id="email" type="email" pattern="[^ @]*@[^ @]*" value="" placeholder="Email">
-          <button type="button" class="square" for="email" data-error="wrong" data-success="right">REGISTER</button>
-          </div><!--input fields-->
-          <p>Want an invite to our private beta? Sign up here.</p>
-        </div>
-        <div class="hiring">
-          <button type="button" class="round"><i class="fa fa-angellist"></i></button>
-          <button type="button" class="round"><i class="fa fa-linkedin"></i></button>
-          <p>We’re Hiring!</p>
-        </div><!--hiring-->
-      </section>
+        <section class="intro">
+            <div class="intro-copy-wrapper">
+                <div class="logo">
+                    <img src="http://web.kateeldridge.co/Alec/_/images/alec-logo.png" alt="Alec Logo"/>
+                   <!-- <h3>ALEC</h3>-->
+                </div><!--logo-->
+                <div class="intro-copy">
+                    <h2>Great Teachers <br/><span>On Demand</span></h2>
+                </div><!--intro-copy-->
+             </div>   
+        </section><!--intro-->
+        <section class="bottom">
+            <div class="bottom-before"></div><!--bottom-before-->
+            <div class="bottom-copy">
+                <p><span>Alec</span> allows parents to seamlessly find the ideal tutor for their child by offering a powerful matching algorithm, same-day sessions and rigorously vetted tutors.</p>
+            </div><!--bottom-copy-->
+            <div class="register">
+                <p>Want an invite to our private beta? Sign up here.</p>               
+                <button id="clicked"class="btn btn-1"> <svg> <rect x="0" y="0" fill="none" width="100%" height="100%"/></svg> Register</button>  
+            </div><!--register-->
+            <div class="input">
+                <div class="input-fields">
+                    <input id="name" type="text" placeholder="Name">
+                    <input id="email" type="email" pattern="[^ @]*@[^ @]*" value="" placeholder="Email">
+                    <button class="square btn btn-1 " for="email"> <svg> <rect x="0" y="0" fill="none" width="100%" height="100%"/></svg> Register</button> 
+                </div><!--input fields-->
+            </div><!--input-->
+            <div class="hiring">
+                <button type="button" class="round" onclick="location.href='http://www.kateeldridge.co';" target="_blank" ><i class="fa fa-angellist"></i></button>
+                <button type="button" class="round"onclick="location.href='http://www.kateeldridge.co';" target="_blank" ><i class="fa fa-linkedin"></i></button>
+                <p>We’re Hiring!</p>
+            </div><!--hiring-->
+        </section>
     </div><!--wrapper-->
 <script src="_/js/script.js"></script>  
 </body> 

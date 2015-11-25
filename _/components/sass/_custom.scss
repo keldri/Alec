@@ -1,56 +1,21 @@
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
-body{
-  background-color: rgb(223, 217, 217);
-}
-h1, h2, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
-}
-.intro-copy h2{
-  text-transform:uppercase;
-  font-size:17pt;
-  color:#fff;
-  float:none;
-  clear:both;
-     @include respond-to(small-screens){
-      font-size:22pt;
-     }
-      @include respond-to(smaller-screens){
-        font-size:23.5pt;
-     }
-     @include respond-to(medium-screens){
-        font-size:26pt;
-     }
-     @include respond-to(large-screens){
-        font-size:34pt;
-     }
-    span{
-      font-family: 'PT Sans', sans-serif;
-      font-size:26pt;
-      font-weight:600;
-          @include respond-to(small-screens){
-            font-size:34pt;
-          }
-          @include respond-to(smaller-screens){
-            font-size:36pt;
-          }
-         @include respond-to(medium-screens){
-          font-size:40pt;
-         }
-         @include respond-to(large-screens){
-          font-size:51pt;
-         }
-    }
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
+body{
+    background-color: rgb(223, 217, 217);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
 
 .intro {
     width: 100%;
@@ -59,24 +24,25 @@ h1, h2, h3, h4 {
     background-image: url("http://web.kateeldridge.co/Alec/_/images/HomePageScene.png");
     height: 100%;
     background-size:cover;
-       @include respond-to(small-screens) {
-          min-height:335px;
-       }
-       @include respond-to(smaller-screens){
-          min-height: 379px;
-       }
+        @include respond-to(small-screens) {
+            min-height:335px;
+        }
+        @include respond-to(smaller-screens){
+            min-height: 379px;
+        }
         @include respond-to(medium-screens){
-          min-height:511px;
-       }
-       @include respond-to(large-screens){
-          min-height:773px;
-          height:100%;
-       }
+            min-height:511px;
+        }
+        @include respond-to(large-screens){
+            min-height:1024px;
+            height:100%;
+            background-position-x: 31%;
+        }
         @include respond-to(x-large-screens){
             min-height: 1024px;
             background-position-x: 38%;
             height:100%;
-       }
+        }
 }
 .intro-copy-wrapper{
     position: relative;
@@ -84,91 +50,147 @@ h1, h2, h3, h4 {
     width: 257px;
     margin: 0 auto;
     max-width: 100%;
-      @include respond-to(smaller-screens){
-        width:268px;
-      }
-       @include respond-to(medium-screens){
-        width:300px;
-        top:187px;
-      }
-      @include respond-to(large-screens){
-        width:100%;
-        padding: 0 7%;
-        top: 220px;
-      }
-
+        @include respond-to(smaller-screens){
+            width:268px;
+        }
+         @include respond-to(medium-screens){
+            width:300px;
+            top:187px;
+        }
+        @include respond-to(large-screens){
+            width:100%;
+            padding: 0 7%;
+            top: 220px;
+        }
+        @include respond-to(x-large-screens){
+            width:100%;
+            padding: 0 7%;
+            top: 220px;
+        }
 }  
 .intro-copy {
     position: relative;
     text-align: center;//can remove to remove center
-   // float:left;//can add to remove center
+    /*float:left;can add to remove center*/
     margin-left: 2%;
     top: 3px;
-     @include respond-to(small-screens) {
-     }
-     @include respond-to(smaller-screens){
-       
-     }
-     @include respond-to(medium-screens){
+        @include respond-to(large-screens){
+            text-align:left; //can remove to center
+            float:left; //can remove to center
+            margin-left:0;
+         }
+        @include respond-to(x-large-screens){
+            text-align:left; //can remove to center
+            float:left; //can remove to center
+            margin-left:0;
+         }
+}   
+.intro-copy h2{
+    text-transform:uppercase;
+    font-size:17pt;
+    color:#fff;
+    float:none;
+    clear:both;
+        @include respond-to(small-screens){
+            font-size:22pt;
+        }
+        @include respond-to(smaller-screens){
+            font-size:23.5pt;
+        }
+        @include respond-to(medium-screens){
+            font-size:26pt;
+        }
+        @include respond-to(large-screens){
+            font-size:34pt;
+        }
+        @include respond-to(x-large-screens){
+            font-size:34pt;
+        }
+        span{
+            font-family: 'PT Sans', sans-serif;
+            font-size:26pt;
+            font-weight:600;
+                @include respond-to(small-screens){
+                    font-size:34pt;
+                }
+                @include respond-to(smaller-screens){
+                    font-size:36pt;
+                }
+                @include respond-to(medium-screens){
+                    font-size:40pt;
+                }
+                @include respond-to(large-screens){
+                    font-size:51pt;
+                }
+                @include respond-to(x-large-screens){
+                    font-size:51pt;
+                }
+        }
+}
 
-     }
-     @include respond-to(large-screens){
-          text-align:left; //can remove to center
-          float:left; //can remove to center
-          margin-left:0;
-       }
-}    
 .logo{
-  text-align:center; //can remove to remove center
-    @include respond-to(large-screens){
-      text-align:left; //can remove to center
-      width:125px;
-      float:left; //can remove to center
-    }
-
-    img{
-      width:60px;
-      height:60px;
-     // float:left;//can add in to remove center
-      @include respond-to(medium-screens){   
-        width: 96px;
-        height: 96px;
-      }  
-       @include respond-to(large-screens){
-        width: 108px;
-        height: 108px;
-       }
-    }
-    h3{
-      font-size: 15pt;
-      color: #FF548D;
-      float: left;
-      margin-top: 13px;
-      margin-left: 10px;
-      @include respond-to(large-screens){
-        float:none;
-        margin-top:0;
-        margin-left:0;
+    text-align:center; //can remove to remove center
+        @include respond-to(large-screens){
+            text-align:left; //can remove to center
+            width:125px;
+            float:left; //can remove to center
+        }
+        @include respond-to(x-large-screens){
+            text-align:left; //can remove to center
+            width:125px;
+            float:left; //can remove to center
+        }
+        img{
+            width:60px;
+            height:60px;
+           /*float:left;can add in to remove center*/
+                @include respond-to(medium-screens){   
+                    width: 96px;
+                    height: 96px;
+                }  
+                @include respond-to(large-screens){
+                    width: 108px;
+                    height: 108px;
+                }
+                @include respond-to(x-large-screens){
+                    width: 108px;
+                    height: 108px;
+                }
+        }
+      h3{
+          font-size: 15pt;
+          color: #FF548D;
+          float: left;
+          margin-top: 13px;
+          margin-left: 10px;
+              @include respond-to(large-screens){
+                  float:none;
+                  margin-top:0;
+                  margin-left:0;
+              }
       }
-    }
 }
 .bottom{
     min-height: 277px;
     background-color: #dfd9d9;
     z-index:2;
-       @include respond-to(small-screens){
-          min-height:325px;
-       }  
-       @include respond-to(large-screens){
-          background-color:transparent;
-          position: relative;
-          top: 270px;
-          width: 100%;
-          padding: 0 7%;
-       }
-       @include respond-to(x-large-screens){
-          background-color:transparent;
-       }
+        @include respond-to(small-screens){
+            min-height:325px;
+        }  
+        @include respond-to(large-screens){
+            background-color:transparent;
+            position: relative;
+            top: 270px;
+            width: 100%;
+            padding: 0 7%;
+        }
+        @include respond-to(x-large-screens){
+            background-color:transparent;
+            position: relative;
+            top: 270px;
+            width: 100%;
+            padding: 0 7%;
+        }
 }
 .bottom-before{
     content: " ";
@@ -185,55 +207,65 @@ h1, h2, h3, h4 {
     -ms-transform: skew(0deg, -4.2deg);
     float: left;
     position: relative;
-    @include respond-to(small-screens){
-      top:-19px;
-      height:37px;
-    }
-    @include respond-to(smaller-screens){
-      top: -22px;
-      height: 44px;
-    }
-    @include respond-to(medium-screens){
-      top: -29px;
-      height: 57px;
-    }  
-    @include respond-to(large-screens){
-     display:none;
-    }
-    @include respond-to(x-large-screens){
-     display:none;
-    }
+        @include respond-to(small-screens){
+            top:-19px;
+            height:37px;
+        }
+        @include respond-to(smaller-screens){
+            top: -22px;
+            height: 44px;
+        }
+        @include respond-to(medium-screens){
+            top: -29px;
+            height: 57px;
+        }  
+        @include respond-to(large-screens){
+            display:none;
+        }
+        @include respond-to(x-large-screens){
+            display:none;
+        }
 }
 
 .bottom-copy{
     padding: 0 6%;
-      @include respond-to(large-screens){
-          padding: 0;
-          width: 60%;
-      }
-      p{
-        z-index: 1;
-        font-family: 'Open Sans', sans-serif;
-        line-height: 1.3;
-        font-size: 11pt;
-        position: relative;
-        bottom: 16px;
-            @include respond-to(small-screens){
-               padding: 11% 1% 2%;
-               font-size:12pt
-            } 
-            @include respond-to(smaller-screens){
-              font-size: 12pt;
-              padding-bottom: 4%;
-            }
-            @include respond-to(medium-screens){
-              font-size:14pt;
-            }  
-            @include respond-to(large-screens){
-                color: #fff;
-                font-size: 15pt;
-                line-height: 1.4;
-            }
+        @include respond-to(large-screens){
+            padding: 0;
+            width: 67%;
+        }
+        @include respond-to(x-large-screens){
+            padding: 0;
+            width: 100%;
+            max-width: 495px;
+        }
+        p{
+            z-index: 1;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.3;
+            font-size: 11pt;
+            position: relative;
+            bottom: 16px;
+                @include respond-to(small-screens){
+                    padding: 11% 1% 2%;
+                    font-size:12pt
+                } 
+                @include respond-to(smaller-screens){
+                    font-size: 12pt;
+                    padding-bottom: 4%;
+                }
+                @include respond-to(medium-screens){
+                    font-size:14pt;
+                }  
+                @include respond-to(large-screens){
+                    color: #fff;
+                    font-size: 14pt;
+                    line-height: 1.4;
+                }
+                @include respond-to(x-large-screens){
+                    color: #fff;
+                    font-size: 14pt;
+                    line-height: 1.4;
+                }
         }       
         span{
             color: #FF548D;
@@ -241,46 +273,102 @@ h1, h2, h3, h4 {
             font-size: 18pt;
             line-height: 2px;          
         }
-
   }
+
+.register{
+    height:20px;   
+       p{
+            text-align:center;
+            font-size: 9pt;
+            font-family: 'Open Sans', sans-serif;
+            color: #3297B2;
+            margin-top: 5px;
+            margin-left:4px;
+                @include respond-to(small-screens){
+                    bottom:95px;
+                    margin-left:0;
+                    text-align:center
+                 }
+                @include respond-to(smaller-screens){
+                    text-align:center;
+                }
+                @include respond-to(medium-screens){
+                    font-size:11pt;
+                }
+                @include respond-to(large-screens){
+                    text-align: left;
+                    font-size: 16pt;
+                    color: #FFF36D;
+                }
+                @include respond-to(x-large-screens){
+                    text-align: left;
+                    font-size: 16pt;
+                    color: #FFF36D;
+                }
+        } 
+}  
 .fa{
-  color: #000;
+    color: #000;
     font-size: 15pt!important;
-      :hover{
-          color: #B22957;
-      }
-       @include respond-to(small-screens){
-        font-size: 20pt!important;
-      }
-      @include respond-to(smaller-screens){
-        font-size: 20pt!important;
-      }
-      @include respond-to(medium-screens){
-        font-size: 20pt!important;
-      }
+        :hover{
+            color: #B22957;
+        }
+        @include respond-to(small-screens){
+            font-size: 20pt!important;
+        }
+        @include respond-to(smaller-screens){
+            font-size: 20pt!important;
+        }
+        @include respond-to(medium-screens){
+            font-size: 20pt!important;
+        }
+        @include respond-to(large-screens){
+            font-size: 20pt!important;
+        }
 }
 .hiring{
     text-align: center;
     padding: 0px 0 5%;
-    p{
-      padding: 3% 0 0;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 10pt;
-      text-transform: uppercase;
-      color: #FF548D;
-        @include respond-to(smaller-screens){
-          font-size:12pt;
-          padding:2% 0 0;
+        p{
+            padding: 3% 0 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 10pt;
+            text-transform: uppercase;
+            color: #FF548D;
+                @include respond-to(smaller-screens){
+                    font-size:12pt;
+                    padding:2% 0 0;
+                }
+                @include respond-to(medium-screens){
+                    font-size:14pt;
+                    padding:2% 0 0;
+                }
+                @include respond-to(large-screens){
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: black;
+                    padding: 9px;
+                }
+                @include respond-to(x-large-screens){
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: black;
+                    padding: 9px;
+                }
+        }
+        @include respond-to(small-screens){
+            bottom:62px;
         }
         @include respond-to(medium-screens){
-          font-size:14pt;
-          padding:2% 0 0;
+            padding:7% 0;
         }
-    }
-     @include respond-to(small-screens){
-      bottom:62px;
-     }
-     @include respond-to(medium-screens){
-      padding:7% 0;
-     }
+        @include respond-to(large-screens){
+            text-align:left;
+        }
+        @include respond-to(x-large-screens){
+            text-align:left;
+        }
+}
+.hiring p span{
+ display:none; 
 }

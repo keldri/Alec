@@ -1,79 +1,85 @@
-.register{
-   p{
-          text-align:center;
-          font-size: 9pt;
-          font-family: 'Open Sans', sans-serif;
-          color: #3297B2;
-          margin-top: 5px;
-          margin-left:4px;
-            @include respond-to(small-screens){
-               bottom:95px;
-               margin-left:0;
-               text-align:center
-             }
-             @include respond-to(smaller-screens){
-              text-align:center;
-             }
-             @include respond-to(medium-screens){
-              font-size:11pt;
-             }
-        } 
-}      
+    
 .input {
+    display:none;
     height: 50px;
     padding: 0% 6%;
     margin-bottom: 30%;
-    @include respond-to(smaller-screens){
-        margin-bottom: 25%;
-    }
-    @include respond-to(medium-screens){
-        margin-bottom: 15%;
-    }
+        @include respond-to(smaller-screens) {
+            margin-bottom: 25%;
+        }
+        @include respond-to(medium-screens) {
+            margin-bottom: 15%;
+        }
+         @include respond-to(large-screens) {
+            padding:0;
+            margin-bottom: 13%;
+        }
+         @include respond-to(x-large-screens) {
+            padding:0;
+            margin-bottom: 13%;
+        }
 }
-.input-fields{
-  @include respond-to(medium-screens){
-    width: 100%;
-    float: left;
-    margin-bottom:2%;
 
-  }
+.input-fields {
+        @include respond-to(medium-screens){
+            width: 100%;
+            float: left;
+            margin-bottom:2%;
+        }
+        @include respond-to(x-large-screens){
+            width: 85%;
+        }
 }
+
 input[type="text"],input[type=email] {
-  display: block;
-  margin: 0;
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 18px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  padding: 10px;
-  border: none;
-  height:39px;
-  margin:2% 0;
- @include respond-to(smaller-screens){
-   height: 39px;
-  }
-  @include respond-to(medium-screens){
-   height: 39px;
-  }
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    padding: 10px;
+    border: none;
+    height:39px;
+    margin:2% 0;
+        @include respond-to(smaller-screens){
+            height: 39px;
+        }
+        @include respond-to(medium-screens){
+            height: 39px;
+        }
 }
 input[type="text"]:focus, input[type=email]:focus {
-  outline: none;
+    outline: none;
 }
 input#name {
     margin-right: 3px;
-    @include respond-to(medium-screens){
-    }
+        @include respond-to(large-screens){
+            margin-right: 3px;
+            width: 32%;
+            float: left;
+        }
+         @include respond-to(x-large-screens){
+            margin-right: 3px;
+            width: 20%;
+            float: left;
+        }
 }
 input#email{
-      @include respond-to(small-screens){
-      }
-      @include respond-to(smaller-screens){
-      }
-      @include respond-to(medium-screens){
-      }
+        @include respond-to(large-screens){
+            width: 35%;
+            float: left;
+        }
+        @include respond-to(x-large-screens){
+            width: 23%;
+            float: left;
+        }
 }
+
+
+/**** cross-browser placeholder styling ((**/
 
 input::-webkit-input-placeholder {
    color:rgba(255, 84, 141, 0.38);
@@ -98,86 +104,7 @@ input:focus::-moz-placeholder {  /* Firefox 19+ */
 }
 input:focus:-ms-input-placeholder {  
    color: #FF548D; 
-
 }
 
-.round {
-    background-color: transparent;
-    border: 2px solid #3297B2;
-    width: 30.5px;
-    height: 30.5px;
-    border-radius: 50%;
-    transition: .3s;
-    cursor: pointer;
-      @include respond-to(small-screens){
-        width:50px;
-        height:50px;
-      }
-      @include respond-to(smaller-screens){
-        width:50px;
-        height:50px;
-      }
-      @include respond-to(medium-screens){
-        width:50px;
-        height:50px;
-      }
-}
-.btn {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  font-size:16px;
-  font-weight: 400;
-  line-height: 45px;
-  margin: 0 auto 2em;
-  max-width: 160px; 
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  vertical-align: middle;
-  width: 100%; 
-  }
-  .btn-1 {
-  background: darken(#2EABCC, 1.5%);
-  font-weight: 100;
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  border:none;
-  padding:0;
-  margin-top:2%;
-  svg {
-    height: 45px;
-    left: 0;
-    position: absolute;
-    top: 0; 
-    width: 100%; 
-  }
-  
-  rect {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-  }
-}
 
-.btn-1:hover {
-  background: rgba(#3297B2, 1.5%);
-  letter-spacing: 1px;
-  
-  rect {
-    stroke-width: 5;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-  }
-}
 
-.btn-1.square{
-    background-color: transparent;
-    color: #FF548D;
-      :hover{
-        background: transparent;
-        letter-spacing: 1px;
-      }
-}

@@ -1,0 +1,139 @@
+/*** hiring buttons ***/
+.round {
+    background-color: transparent;
+    border: 2px solid #3297B2;
+    width: 30.5px;
+    height: 30.5px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+        @include respond-to(small-screens){
+            width:50px;
+            height:50px;
+        }
+        @include respond-to(smaller-screens){
+            width:50px;
+            height:50px;
+        }
+        @include respond-to(medium-screens){
+            width:50px;
+            height:50px;
+        }
+         @include respond-to(large-screens){
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 0 1% 2% 0;
+        }
+        @include respond-to(x-large-screens){
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin: 0 1% 2% 0;
+        }
+}
+/*** SVG Register/Show/hide button ***/
+.btn {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%; 
+        @include respond-to(x-large-screens){
+            height:39px;
+        }
+  }
+  .btn-1 {
+      background: darken(#2EABCC, 1.5%);
+      font-weight: 100;
+      text-align:center;
+      font-family: 'Open Sans', sans-serif;
+      border:none;
+      padding:0;
+      margin-top:2%;
+          svg {
+            height: 45px;
+            left: 0;
+            position: absolute;
+            top: 0; 
+            width: 100%; 
+                @include respond-to(x-large-screens){
+                  height:39px;
+                }
+          }
+          rect {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 2;
+            stroke-dasharray: 422, 0;
+                @include respond-to(large-screens){
+                    stroke: #fff;
+                    stroke-width: 0;
+                    stroke-dasharray: 0, 0;
+                }
+                @include respond-to(x-large-screens){
+                    stroke: #fff;
+                    stroke-width: 0;
+                    stroke-dasharray: 0, 0;
+                }
+          }
+}
+.btn-1:hover {
+    background: rgba(#3297B2, 1.5%);
+    letter-spacing: 1px;
+        @include respond-to(large-screens){
+            letter-spacing:0;
+        }
+        @include respond-to(x-large-screens){
+            letter-spacing:0;
+        }   
+  rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          @include respond-to(large-screens){
+              stroke-width: 0;
+              stroke-dasharray: 0,0;
+              stroke-dashoffset: 0;
+              transition: none;
+          }
+          @include respond-to(x-large-screens){
+              stroke-width: 0;
+              stroke-dasharray: 0,0;
+              stroke-dashoffset: 0;
+              transition: none;
+          }
+  }
+}
+
+/*** form button ***/
+
+.btn-1.square{
+    background-color: transparent;
+    color: #fffff;
+        @include respond-to(large-screens){
+            margin: 0;
+            clear: both;
+            max-width: 67%;
+            background-color:#3297B2;
+        }
+        @include respond-to(x-large-screens){
+            margin: 10% 0 0;
+            float:left;
+            max-width: 17%;
+            background-color:#3297B2;
+        }
+        :hover{
+            background: transparent;
+            letter-spacing: 1px;              
+        }
+}

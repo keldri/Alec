@@ -1,6 +1,7 @@
 /* Vendor Dependancies */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,800);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Condensed);
 /* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -89,6 +90,11 @@ body {
 /* line 16, ../components/sass/_base.scss */
 h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
+}
+
+/* line 19, ../components/sass/_base.scss */
+p {
+  line-height: 1.6;
 }
 
 /* line 1, ../components/sass/_custom.scss */
@@ -229,6 +235,7 @@ h1, h2, h3, h4 {
   color: #fff;
   float: none;
   clear: both;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.31);
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   /* line 88, ../components/sass/_custom.scss */
@@ -260,49 +267,49 @@ h1, h2, h3, h4 {
     font-size: 34pt;
   }
 }
-/* line 109, ../components/sass/_custom.scss */
+/* line 110, ../components/sass/_custom.scss */
 .intro-copy h2 span {
   font-family: 'PT Sans', sans-serif;
   font-size: 26pt;
   font-weight: 600;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 109, ../components/sass/_custom.scss */
+  /* line 110, ../components/sass/_custom.scss */
   .intro-copy h2 span {
     font-size: 34pt;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 109, ../components/sass/_custom.scss */
+  /* line 110, ../components/sass/_custom.scss */
   .intro-copy h2 span {
     font-size: 36pt;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 109, ../components/sass/_custom.scss */
+  /* line 110, ../components/sass/_custom.scss */
   .intro-copy h2 span {
     font-size: 40pt;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 109, ../components/sass/_custom.scss */
+  /* line 110, ../components/sass/_custom.scss */
   .intro-copy h2 span {
     font-size: 51pt;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 109, ../components/sass/_custom.scss */
+  /* line 110, ../components/sass/_custom.scss */
   .intro-copy h2 span {
     font-size: 51pt;
   }
 }
 
-/* line 131, ../components/sass/_custom.scss */
+/* line 132, ../components/sass/_custom.scss */
 .logo {
   text-align: center;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 131, ../components/sass/_custom.scss */
+  /* line 132, ../components/sass/_custom.scss */
   .logo {
     text-align: left;
     width: 125px;
@@ -310,41 +317,41 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 131, ../components/sass/_custom.scss */
+  /* line 132, ../components/sass/_custom.scss */
   .logo {
     text-align: left;
     width: 125px;
     float: left;
   }
 }
-/* line 143, ../components/sass/_custom.scss */
+/* line 144, ../components/sass/_custom.scss */
 .logo img {
   width: 60px;
   height: 60px;
   /*float:left;can add in to remove center*/
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 143, ../components/sass/_custom.scss */
+  /* line 144, ../components/sass/_custom.scss */
   .logo img {
     width: 96px;
     height: 96px;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 143, ../components/sass/_custom.scss */
+  /* line 144, ../components/sass/_custom.scss */
   .logo img {
     width: 108px;
     height: 108px;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 143, ../components/sass/_custom.scss */
+  /* line 144, ../components/sass/_custom.scss */
   .logo img {
     width: 108px;
     height: 108px;
   }
 }
-/* line 160, ../components/sass/_custom.scss */
+/* line 161, ../components/sass/_custom.scss */
 .logo h3 {
   font-size: 15pt;
   color: #FF548D;
@@ -353,7 +360,7 @@ h1, h2, h3, h4 {
   margin-left: 10px;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 160, ../components/sass/_custom.scss */
+  /* line 161, ../components/sass/_custom.scss */
   .logo h3 {
     float: none;
     margin-top: 0;
@@ -361,20 +368,20 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 173, ../components/sass/_custom.scss */
+/* line 174, ../components/sass/_custom.scss */
 .bottom {
   min-height: 277px;
   background-color: #dfd9d9;
   z-index: 2;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 173, ../components/sass/_custom.scss */
+  /* line 174, ../components/sass/_custom.scss */
   .bottom {
     min-height: 325px;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 173, ../components/sass/_custom.scss */
+  /* line 174, ../components/sass/_custom.scss */
   .bottom {
     background-color: transparent;
     position: relative;
@@ -384,7 +391,7 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 173, ../components/sass/_custom.scss */
+  /* line 174, ../components/sass/_custom.scss */
   .bottom {
     background-color: transparent;
     position: relative;
@@ -394,7 +401,7 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 195, ../components/sass/_custom.scss */
+/* line 196, ../components/sass/_custom.scss */
 .bottom-before {
   content: " ";
   position: relative;
@@ -412,59 +419,59 @@ h1, h2, h3, h4 {
   position: relative;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 195, ../components/sass/_custom.scss */
+  /* line 196, ../components/sass/_custom.scss */
   .bottom-before {
     top: -19px;
     height: 37px;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 195, ../components/sass/_custom.scss */
+  /* line 196, ../components/sass/_custom.scss */
   .bottom-before {
     top: -22px;
     height: 44px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 195, ../components/sass/_custom.scss */
+  /* line 196, ../components/sass/_custom.scss */
   .bottom-before {
     top: -29px;
     height: 57px;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 195, ../components/sass/_custom.scss */
+  /* line 196, ../components/sass/_custom.scss */
   .bottom-before {
     display: none;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 195, ../components/sass/_custom.scss */
+  /* line 196, ../components/sass/_custom.scss */
   .bottom-before {
     display: none;
   }
 }
 
-/* line 230, ../components/sass/_custom.scss */
+/* line 231, ../components/sass/_custom.scss */
 .bottom-copy {
   padding: 0 6%;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 230, ../components/sass/_custom.scss */
+  /* line 231, ../components/sass/_custom.scss */
   .bottom-copy {
     padding: 0;
-    width: 67%;
+    width: 66%;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 230, ../components/sass/_custom.scss */
+  /* line 231, ../components/sass/_custom.scss */
   .bottom-copy {
     padding: 0;
     width: 100%;
-    max-width: 495px;
+    max-width: 549px;
   }
 }
-/* line 241, ../components/sass/_custom.scss */
+/* line 242, ../components/sass/_custom.scss */
 .bottom-copy p {
   z-index: 1;
   font-family: 'Open Sans', sans-serif;
@@ -474,27 +481,27 @@ h1, h2, h3, h4 {
   bottom: 16px;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 241, ../components/sass/_custom.scss */
+  /* line 242, ../components/sass/_custom.scss */
   .bottom-copy p {
     padding: 11% 1% 2%;
     font-size: 12pt;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 241, ../components/sass/_custom.scss */
+  /* line 242, ../components/sass/_custom.scss */
   .bottom-copy p {
     font-size: 12pt;
     padding-bottom: 4%;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 241, ../components/sass/_custom.scss */
+  /* line 242, ../components/sass/_custom.scss */
   .bottom-copy p {
     font-size: 14pt;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 241, ../components/sass/_custom.scss */
+  /* line 242, ../components/sass/_custom.scss */
   .bottom-copy p {
     color: #fff;
     font-size: 14pt;
@@ -502,14 +509,14 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 241, ../components/sass/_custom.scss */
+  /* line 242, ../components/sass/_custom.scss */
   .bottom-copy p {
     color: #fff;
-    font-size: 14pt;
+    font-size: 17pt;
     line-height: 1.4;
   }
 }
-/* line 270, ../components/sass/_custom.scss */
+/* line 271, ../components/sass/_custom.scss */
 .bottom-copy span {
   color: #FF548D;
   text-transform: uppercase;
@@ -517,11 +524,29 @@ h1, h2, h3, h4 {
   line-height: 2px;
 }
 
-/* line 278, ../components/sass/_custom.scss */
+/* line 279, ../components/sass/_custom.scss */
 .register {
-  height: 20px;
+  margin-top: 6%;
 }
-/* line 280, ../components/sass/_custom.scss */
+@media only screen and (min-width: 601px) and (max-width: 772px) {
+  /* line 279, ../components/sass/_custom.scss */
+  .register {
+    margin-top: 6%;
+  }
+}
+@media only screen and (min-width: 773px) and (max-width: 992px) {
+  /* line 279, ../components/sass/_custom.scss */
+  .register {
+    margin-top: 6%;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 279, ../components/sass/_custom.scss */
+  .register {
+    margin-top: 6%;
+  }
+}
+/* line 290, ../components/sass/_custom.scss */
 .register p {
   text-align: center;
   font-size: 9pt;
@@ -531,7 +556,7 @@ h1, h2, h3, h4 {
   margin-left: 4px;
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 280, ../components/sass/_custom.scss */
+  /* line 290, ../components/sass/_custom.scss */
   .register p {
     bottom: 95px;
     margin-left: 0;
@@ -539,74 +564,85 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 280, ../components/sass/_custom.scss */
+  /* line 290, ../components/sass/_custom.scss */
   .register p {
     text-align: center;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 280, ../components/sass/_custom.scss */
+  /* line 290, ../components/sass/_custom.scss */
   .register p {
     font-size: 11pt;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 280, ../components/sass/_custom.scss */
+  /* line 290, ../components/sass/_custom.scss */
   .register p {
     text-align: left;
-    font-size: 16pt;
-    color: #FFF36D;
+    font-size: 13pt;
+    color: #FF548D;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+    margin-left: 0;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 280, ../components/sass/_custom.scss */
+  /* line 290, ../components/sass/_custom.scss */
   .register p {
     text-align: left;
-    font-size: 16pt;
-    color: #FFF36D;
+    font-size: 13pt;
+    color: #FF548D;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+    margin-left: 0;
   }
 }
 
-/* line 310, ../components/sass/_custom.scss */
+/* line 324, ../components/sass/_custom.scss */
 .fa {
   color: #000;
   font-size: 15pt !important;
 }
-/* line 313, ../components/sass/_custom.scss */
-.fa :hover {
-  color: #B22957;
-}
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 310, ../components/sass/_custom.scss */
+  /* line 324, ../components/sass/_custom.scss */
   .fa {
     font-size: 20pt !important;
   }
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 310, ../components/sass/_custom.scss */
+  /* line 324, ../components/sass/_custom.scss */
   .fa {
     font-size: 20pt !important;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 310, ../components/sass/_custom.scss */
+  /* line 324, ../components/sass/_custom.scss */
   .fa {
     font-size: 20pt !important;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 310, ../components/sass/_custom.scss */
+  /* line 324, ../components/sass/_custom.scss */
+  .fa {
+    font-size: 20pt !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  /* line 324, ../components/sass/_custom.scss */
   .fa {
     font-size: 20pt !important;
   }
 }
 
-/* line 329, ../components/sass/_custom.scss */
+/* line 343, ../components/sass/_custom.scss */
+.fa:hover {
+  color: #B22957 !important;
+}
+
+/* line 346, ../components/sass/_custom.scss */
 .hiring {
   text-align: center;
-  padding: 0px 0 5%;
+  padding: 0 0 5% 0;
 }
-/* line 332, ../components/sass/_custom.scss */
+/* line 349, ../components/sass/_custom.scss */
 .hiring p {
   padding: 3% 0 0;
   font-family: 'Open Sans', sans-serif;
@@ -615,63 +651,65 @@ h1, h2, h3, h4 {
   color: #FF548D;
 }
 @media only screen and (min-width: 501px) and (max-width: 600px) {
-  /* line 332, ../components/sass/_custom.scss */
+  /* line 349, ../components/sass/_custom.scss */
   .hiring p {
     font-size: 12pt;
     padding: 2% 0 0;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 332, ../components/sass/_custom.scss */
+  /* line 349, ../components/sass/_custom.scss */
   .hiring p {
     font-size: 14pt;
     padding: 2% 0 0;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 332, ../components/sass/_custom.scss */
+  /* line 349, ../components/sass/_custom.scss */
   .hiring p {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FF548D;
     padding: 9px;
+    line-height: 1.2;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 332, ../components/sass/_custom.scss */
+  /* line 349, ../components/sass/_custom.scss */
   .hiring p {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FF548D;
     padding: 9px;
+    line-height: 1.2;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  /* line 329, ../components/sass/_custom.scss */
+  /* line 346, ../components/sass/_custom.scss */
   .hiring {
     bottom: 62px;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 772px) {
-  /* line 329, ../components/sass/_custom.scss */
+  /* line 346, ../components/sass/_custom.scss */
   .hiring {
     padding: 7% 0;
   }
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 329, ../components/sass/_custom.scss */
+  /* line 346, ../components/sass/_custom.scss */
   .hiring {
     text-align: left;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 329, ../components/sass/_custom.scss */
+  /* line 346, ../components/sass/_custom.scss */
   .hiring {
     text-align: left;
   }
 }
 
-/* line 372, ../components/sass/_custom.scss */
+/* line 391, ../components/sass/_custom.scss */
 .hiring p span {
   display: none;
 }
@@ -680,7 +718,7 @@ h1, h2, h3, h4 {
 /* line 2, ../components/sass/_buttons.scss */
 .round {
   background-color: transparent;
-  border: 2px solid #3297B2;
+  border: 4px solid #3297B2;
   width: 30.5px;
   height: 30.5px;
   border-radius: 50%;
@@ -720,8 +758,8 @@ h1, h2, h3, h4 {
 @media only screen and (min-width: 993px) {
   /* line 2, ../components/sass/_buttons.scss */
   .round {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     float: left;
     margin: 0 1% 2% 0;
   }
@@ -744,14 +782,8 @@ h1, h2, h3, h4 {
   vertical-align: middle;
   width: 100%;
 }
-@media only screen and (min-width: 993px) {
-  /* line 36, ../components/sass/_buttons.scss */
-  .btn {
-    height: 39px;
-  }
-}
 
-/* line 54, ../components/sass/_buttons.scss */
+/* line 51, ../components/sass/_buttons.scss */
 .btn-1 {
   background: #2da6c6;
   font-weight: 100;
@@ -760,8 +792,9 @@ h1, h2, h3, h4 {
   border: none;
   padding: 0;
   margin-top: 2%;
+  letter-spacing: 1px;
 }
-/* line 62, ../components/sass/_buttons.scss */
+/* line 60, ../components/sass/_buttons.scss */
 .btn-1 svg {
   height: 45px;
   left: 0;
@@ -769,13 +802,7 @@ h1, h2, h3, h4 {
   top: 0;
   width: 100%;
 }
-@media only screen and (min-width: 993px) {
-  /* line 62, ../components/sass/_buttons.scss */
-  .btn-1 svg {
-    height: 39px;
-  }
-}
-/* line 72, ../components/sass/_buttons.scss */
+/* line 67, ../components/sass/_buttons.scss */
 .btn-1 rect {
   fill: none;
   stroke: #fff;
@@ -783,7 +810,7 @@ h1, h2, h3, h4 {
   stroke-dasharray: 422, 0;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 72, ../components/sass/_buttons.scss */
+  /* line 67, ../components/sass/_buttons.scss */
   .btn-1 rect {
     stroke: #fff;
     stroke-width: 0;
@@ -791,7 +818,7 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 72, ../components/sass/_buttons.scss */
+  /* line 67, ../components/sass/_buttons.scss */
   .btn-1 rect {
     stroke: #fff;
     stroke-width: 0;
@@ -799,24 +826,23 @@ h1, h2, h3, h4 {
   }
 }
 
-/* line 89, ../components/sass/_buttons.scss */
+/* line 84, ../components/sass/_buttons.scss */
 .btn-1:hover {
   background: #3297b2;
-  letter-spacing: 1px;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 89, ../components/sass/_buttons.scss */
+  /* line 84, ../components/sass/_buttons.scss */
   .btn-1:hover {
     letter-spacing: 0;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 89, ../components/sass/_buttons.scss */
+  /* line 84, ../components/sass/_buttons.scss */
   .btn-1:hover {
     letter-spacing: 0;
   }
 }
-/* line 98, ../components/sass/_buttons.scss */
+/* line 92, ../components/sass/_buttons.scss */
 .btn-1:hover rect {
   stroke-width: 5;
   stroke-dasharray: 15, 310;
@@ -824,7 +850,7 @@ h1, h2, h3, h4 {
   transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 98, ../components/sass/_buttons.scss */
+  /* line 92, ../components/sass/_buttons.scss */
   .btn-1:hover rect {
     stroke-width: 0;
     stroke-dasharray: 0,0;
@@ -833,7 +859,7 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 98, ../components/sass/_buttons.scss */
+  /* line 92, ../components/sass/_buttons.scss */
   .btn-1:hover rect {
     stroke-width: 0;
     stroke-dasharray: 0,0;
@@ -843,13 +869,14 @@ h1, h2, h3, h4 {
 }
 
 /*** form button ***/
-/* line 120, ../components/sass/_buttons.scss */
+/* line 114, ../components/sass/_buttons.scss */
 .btn-1.square {
   background-color: transparent;
   color: #fffff;
+  letter-spacing: 1px;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 120, ../components/sass/_buttons.scss */
+  /* line 114, ../components/sass/_buttons.scss */
   .btn-1.square {
     margin: 0;
     clear: both;
@@ -858,18 +885,17 @@ h1, h2, h3, h4 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 120, ../components/sass/_buttons.scss */
+  /* line 114, ../components/sass/_buttons.scss */
   .btn-1.square {
-    margin: 10% 0 0;
+    margin: 2% 0 0;
     float: left;
     max-width: 17%;
     background-color: #3297B2;
   }
 }
-/* line 135, ../components/sass/_buttons.scss */
+/* line 130, ../components/sass/_buttons.scss */
 .btn-1.square :hover {
-  background: transparent;
-  letter-spacing: 1px;
+  color: #fff;
 }
 
 /* line 2, ../components/sass/_forms.scss */
@@ -902,7 +928,7 @@ h1, h2, h3, h4 {
   /* line 2, ../components/sass/_forms.scss */
   .input {
     padding: 0;
-    margin-bottom: 13%;
+    margin-bottom: 8%;
   }
 }
 
@@ -948,18 +974,24 @@ input[type="text"], input[type=email] {
     height: 39px;
   }
 }
+@media only screen and (min-width: 993px) {
+  /* line 34, ../components/sass/_forms.scss */
+  input[type="text"], input[type=email] {
+    height: 44px;
+  }
+}
 
-/* line 54, ../components/sass/_forms.scss */
+/* line 57, ../components/sass/_forms.scss */
 input[type="text"]:focus, input[type=email]:focus {
   outline: none;
 }
 
-/* line 57, ../components/sass/_forms.scss */
+/* line 60, ../components/sass/_forms.scss */
 input#name {
   margin-right: 3px;
 }
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 57, ../components/sass/_forms.scss */
+  /* line 60, ../components/sass/_forms.scss */
   input#name {
     margin-right: 3px;
     width: 32%;
@@ -967,7 +999,7 @@ input#name {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 57, ../components/sass/_forms.scss */
+  /* line 60, ../components/sass/_forms.scss */
   input#name {
     margin-right: 3px;
     width: 20%;
@@ -976,14 +1008,14 @@ input#name {
 }
 
 @media only screen and (min-width: 773px) and (max-width: 992px) {
-  /* line 70, ../components/sass/_forms.scss */
+  /* line 73, ../components/sass/_forms.scss */
   input#email {
     width: 35%;
     float: left;
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 70, ../components/sass/_forms.scss */
+  /* line 73, ../components/sass/_forms.scss */
   input#email {
     width: 23%;
     float: left;
@@ -991,46 +1023,46 @@ input#name {
 }
 
 /**** cross-browser placeholder styling ((**/
-/* line 84, ../components/sass/_forms.scss */
+/* line 87, ../components/sass/_forms.scss */
 input::-webkit-input-placeholder {
   color: rgba(255, 84, 141, 0.38);
 }
 
-/* line 87, ../components/sass/_forms.scss */
+/* line 90, ../components/sass/_forms.scss */
 input:focus::-webkit-input-placeholder {
   color: #FF548D;
 }
 
-/* line 90, ../components/sass/_forms.scss */
+/* line 93, ../components/sass/_forms.scss */
 input:-moz-placeholder {
   /* Firefox 18- */
   color: rgba(255, 84, 141, 0.38);
 }
 
-/* line 93, ../components/sass/_forms.scss */
+/* line 96, ../components/sass/_forms.scss */
 input:focus::-moz-placeholder {
   /* Firefox 18- */
   color: #FF548D;
 }
 
-/* line 96, ../components/sass/_forms.scss */
+/* line 99, ../components/sass/_forms.scss */
 input::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(255, 84, 141, 0.38);
 }
 
-/* line 99, ../components/sass/_forms.scss */
+/* line 102, ../components/sass/_forms.scss */
 input:focus::-moz-placeholder {
   /* Firefox 19+ */
   color: #FF548D;
 }
 
-/* line 102, ../components/sass/_forms.scss */
+/* line 105, ../components/sass/_forms.scss */
 :-ms-input-placeholder {
   color: rgba(255, 84, 141, 0.38);
 }
 
-/* line 105, ../components/sass/_forms.scss */
+/* line 108, ../components/sass/_forms.scss */
 input:focus:-ms-input-placeholder {
   color: #FF548D;
 }

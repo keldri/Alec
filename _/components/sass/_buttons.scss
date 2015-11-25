@@ -1,7 +1,7 @@
 /*** hiring buttons ***/
 .round {
     background-color: transparent;
-    border: 2px solid #3297B2;
+    border: 4px solid #3297B2;
     width: 30.5px;
     height: 30.5px;
     border-radius: 50%;
@@ -26,8 +26,8 @@
             margin: 0 1% 2% 0;
         }
         @include respond-to(x-large-screens){
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             float: left;
             margin: 0 1% 2% 0;
         }
@@ -47,9 +47,6 @@
     text-transform: uppercase;
     vertical-align: middle;
     width: 100%; 
-        @include respond-to(x-large-screens){
-            height:39px;
-        }
   }
   .btn-1 {
       background: darken(#2EABCC, 1.5%);
@@ -59,15 +56,13 @@
       border:none;
       padding:0;
       margin-top:2%;
+      letter-spacing: 1px;
           svg {
             height: 45px;
             left: 0;
             position: absolute;
             top: 0; 
-            width: 100%; 
-                @include respond-to(x-large-screens){
-                  height:39px;
-                }
+            width: 100%;  
           }
           rect {
             fill: none;
@@ -88,7 +83,6 @@
 }
 .btn-1:hover {
     background: rgba(#3297B2, 1.5%);
-    letter-spacing: 1px;
         @include respond-to(large-screens){
             letter-spacing:0;
         }
@@ -120,6 +114,7 @@
 .btn-1.square{
     background-color: transparent;
     color: #fffff;
+    letter-spacing: 1px;              
         @include respond-to(large-screens){
             margin: 0;
             clear: both;
@@ -127,13 +122,12 @@
             background-color:#3297B2;
         }
         @include respond-to(x-large-screens){
-            margin: 10% 0 0;
+            margin: 2% 0 0;
             float:left;
             max-width: 17%;
             background-color:#3297B2;
         }
         :hover{
-            background: transparent;
-            letter-spacing: 1px;              
+        color:#fff;
         }
 }
